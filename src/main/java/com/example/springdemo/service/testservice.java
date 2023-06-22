@@ -5,16 +5,16 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.springdemo.data.database;
-import com.example.springdemo.repo.repo;
+//import com.example.springdemo.data.database;
+//import com.example.springdemo.repo.repo;
 
 import java.util.Arrays;
 
 @Service
 public class testservice {
 
-    @Autowired
-    repo repository;
+    //@Autowired
+    //repo repository;
 
     public String service(String city) {
         HttpHeaders headers = new HttpHeaders();
@@ -41,21 +41,5 @@ public class testservice {
         
         return result;
     }
-
-    void createGroceryItems() {
-        System.out.println("Data creation started...");
-        repository.save(new database("Whole Wheat Biscuit", "Whole Wheat Biscuit", 5, "snacks"));
-        repository.save(new database("Kodo Millet", "XYZ Kodo Millet healthy", 2, "millets"));
-        repository.save(new database("Dried Red Chilli", "Dried Whole Red Chilli", 2, "spices"));
-        repository.save(new database("Pearl Millet", "Healthy Pearl Millet", 1, "millets"));
-        repository.save(new database("Cheese Crackers", "Bonny Cheese Crackers Plain", 6, "snacks"));
-        System.out.println("Data creation complete...");
-    }
-
-    public void findCountOfGroceryItems() {
-         long count = repository.count();
-         System.out.println("Number of documents in the collection: " + count);
-     }
-
 
 }
