@@ -1,0 +1,9 @@
+com/example/springdemo/dto/LocationDTO.class
+com/example/springdemo/dto/ConditionDTO.class
+com/example/springdemo/dto/WeatherDTO.class
+com/example/springdemo/controller/APIController.class
+com/example/springdemo/data/database.class
+com/example/springdemo/repo/repo.class
+com/example/springdemo/service/testservice.class
+com/example/springdemo/dto/CurrentDTO.class
+com/example/springdemo/Main.class
