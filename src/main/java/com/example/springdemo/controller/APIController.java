@@ -21,7 +21,7 @@ public class APIController {
     private testservice testservicel;
 
     @GetMapping(value = "/temp", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "https://react-wnsx7ioura-uc.a.run.app/")
+    @CrossOrigin(origins = "https://react-fgdy4ej5dq-uc.a.run.app/")
     public Map< String, Object > temp(@RequestParam(name = "city", required = false) String city){
 
         JsonParser springParser = JsonParserFactory.getJsonParser();
